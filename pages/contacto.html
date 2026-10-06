@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <p> <strong>Florería Bautis y Marquez</strong> - Pedidos y atención al cliente</p>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h2>Haz tu pedido a nuestro taller de productos</h2>
+        <p>Elaboramos ramos a medida para cumpleaños, aniversarios, bodas y condolencias. Completa el formulario
+            inferior con al menos 24 horas de anticipación para pedidos con flores especiales, o visítanos en nuestro
+            local de San Isidro para entregas inmediatas de flores frescas del día.</p>
+        <hr>
+        <section>
+            <div>
+                <h2>Ubicacion de Floreria bautis y marquez</h2>
+                <p>Nos encontramos en Calle Los Libertadores 380, San Isidro (a dos cuadras del Bosque El Olivar).</p>
+                <center>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31213.272597537038!2d-77.09240488916018!3d-12.066961999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9eef2608e1f%3A0xf5f1815522c0505c!2sFLORER%C3%8DA%20RHALEM%20DETALLES%20%7C%20Regalos%20personalizados%20%26%20Desayuno%20sorpresa!5e0!3m2!1ses-419!2spe!4v1791291787603!5m2!1ses-419!2spe"
+                        width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </center>
+            </div>
+        </section>
+        <section>
+            <h2>Formulario de Solicitud de pedidos</h2>
+            <fieldset>
+                <legend>Formulario de Solicitud</legend>
+                <form method="POST">
+                    <p>
+                        <label for="nombre">Nombres y apellidos completos:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="ej: Juan Perez" required>
+                    </p>
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="kevin123@gmail.com" required>
+                    </p>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="number" id="telefono" name="telefono" placeholder="997959392" required>
+                    <p>
+                        <label for="dni">DNI o documento de indentidad:</label>
+                        <input type="number" id="dni" name="dni" placeholder="61770501" required>
+                    </p>
+            </fieldset>
+            <fieldset>
+                <legend>Detalle del pedido</legend>
+                <form method="POST">
+                    <p>
+                        <label for="tipo">Ocasion del envio:</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">*Selecciona una opción</option>
+                            <option value="ramos">Ramos de flores hechas a mano</option>
+                            <option value="arreglos">flores naturales</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="cantidad">Cantidad de ramos:(min 1 max 10)</label>
+                        <input type="number" id="cantidad" name="cantidad" placeholder="1 max 10" min="1" max="10"
+                            required>
+                    </p>
+                    <p>
+                        <label for="fecha">Fecha de progrmacion de entrega:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </p>
+                    <p>
+                        <label for="text2"> Mensaje adicional</label>
+                        <textarea id="text2" name="text2" rows="2" cols="30" placeholder="Mensaje adicional"></textarea>
+                    </p>
+                    <button type="submit">Enviar solicitud</button>
+                </form>
+            </fieldset>
+        </section>
+        <hr>
+        <section>
+            <h2> Zona de despacho y tiempo en LIMA</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Zona Geográfica</th>
+                        <th>Distrito incluido</th>
+                        <th>Rango de horario habitual</th>
+                        <th>Costo de envio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Zona 1 (Centro)o</td>
+                        <td>San Isidro, Miraflores, San Borja, Surco, Barranco</td>
+                        <td>9:00 am a 1:00 pm / 2:00 pma 6:00 pm</td>
+                        <td>$12 soles</td>
+                    </tr>
+                    <tr>
+                        <td>Zona 2 (Oeste)</td>
+                        <td>Magdalena, Jesús María, Lince, Pueblo Libre, San Miguel</td>
+                        <td>10:00 am a 2:00 pm / 3:00 pm a 7:00 pm</td>
+                        <td>$20 soles</td>
+                    </tr>
+                    <tr>
+                        <td>Zona 3 (Este &Norte)</td>
+                        <td>La Molina, Ate, Surquillo, San Luis, Chorrillos</td>
+                        <td>11:00 am a 4:00 pm</td>
+                        <td>$30 soles</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>
+                Politicas de entrega y envios de pedidos </h2>
+            <p>Garantía de frescura de 48 horas: Si alguna vara floral llega en mal estado o marchita, envíanos una
+                fotografía a nuestro WhatsApp dentro de las primeras dos horas de recibida la entrega y te repondremos
+                el arreglo sin costo adicional.</p>
+        </section>
+        <hr>
+        <footer>
+            <p>Floreria bautiz y marquez con HTML5 PURO.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
